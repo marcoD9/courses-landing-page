@@ -1,10 +1,10 @@
 import Section from "./components/Section";
-import TopBar from "./components/TopBar";
+import TitleBar from "./components/TitleBar";
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <TopBar />
+      <TitleBar />
       <Section />
     </div>
   );
