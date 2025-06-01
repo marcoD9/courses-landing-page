@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+/*Light Mode */
+html.light {
+  --background: #ffffff;
+  --foreground: #171717;
+  --switch-bg-on: #2196f3;
+  --switch-bg-off: #555555;
+  --switch-handle-color: #eeeeee;
+  --card: rgba(10, 10, 200);
+  --card-hover-color: rgba(50, 50, 250);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --switch-bg-on: #2196f3;
+    --switch-bg-off: #555555;
+    --switch-handle-color: #eeeeee;
+    --card: rgba(10, 10, 200);
+    --card-hover-color: rgba(50, 50, 250);
+  }
+}
+
+/*Dark Mode*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --switch-bg-on: #2196f3;
+    --switch-bg-off: #555555;
+    --switch-handle-color: #eeeeee;
+    --card: rgba(200, 10, 200);
+    --card-hover-color: rgba(200, 50, 250);
+  }
+}
+
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --switch-bg-on: #2196f3;
+  --switch-bg-off: #555555;
+  --switch-handle-color: #eeeeee;
+  --card: rgba(200, 10, 200);
+  --card-hover-color: rgba(200, 50, 250);
 }
