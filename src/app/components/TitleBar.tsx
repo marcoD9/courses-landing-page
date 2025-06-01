@@ -1,8 +1,8 @@
 import ThemeSwitch from "./ui/ThemeSwitch";
 
-export default function TopBar() {
+export default function TitleBar() {
   return (
-    <div className="bg-linear-to-r from-indigo-950 to-blue-700 flex flex-row items-center justify-between h-24 px-4">
+    <div className="bg-linear-to-r from-[var(--gradient-color1)] to-[var(--gradient-color2)] flex flex-row items-center justify-between h-24 px-4">
       {/* Left Container */}
       <div className="flex-none w-24"></div>
 
