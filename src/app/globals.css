@@ -13,8 +13,13 @@ html.light {
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
   --switch-handle-color: #eeeeee;
-  --card: rgba(10, 10, 200);
-  --card-hover-color: rgba(50, 50, 250);
+  /* Card */
+  --card: rgba(239, 247, 207);
+  --card-hover-color: rgba(217, 226, 193);
+  --border: rgba(0, 0, 0);
+  /*TitleBar*/
+  --gradient-color1: rgba(239, 247, 207);
+  --gradient-color2: rgba(217, 226, 193);
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,8 +29,11 @@ html.light {
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
-    --card: rgba(10, 10, 200);
-    --card-hover-color: rgba(50, 50, 250);
+    --card: rgba(239, 247, 207);
+    --card-hover-color: rgba(217, 226, 193);
+    --border: rgba(0, 0, 0);
+    --gradient-color1: rgba(239, 247, 207);
+    --gradient-color2: rgba(217, 226, 193);
   }
 }
 
@@ -37,8 +45,11 @@ html.light {
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
-    --card: rgba(200, 10, 200);
-    --card-hover-color: rgba(200, 50, 250);
+    --card: rgba(44, 34, 96);
+    --card-hover-color: rgba(18, 30, 205);
+    --border: rgba(255, 255, 255);
+    --gradient-color1: rgba(44, 34, 96);
+    --gradient-color2: rgba(18, 30, 205);
   }
 }
 
@@ -48,6 +59,9 @@ html.dark {
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
   --switch-handle-color: #eeeeee;
-  --card: rgba(200, 10, 200);
-  --card-hover-color: rgba(200, 50, 250);
+  --card: rgba(44, 34, 96);
+  --card-hover-color: rgba(18, 30, 205);
+  --border: rgba(255, 255, 255);
+  --gradient-color1: rgba(44, 34, 96);
+  --gradient-color2: rgba(18, 30, 205);
 }
