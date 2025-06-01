@@ -16,7 +16,7 @@ export default function Card({ content }: CardProps) {
         },
       }}
       whileTap={{ scale: 0.8 }}
-      className=" bg-[var(--card)] text-[var(--foreground)] h-full rounded-4xl content-center justify-items-center font-bold hover:bg-[var(--card-hover-color)]"
+      className=" bg-[var(--card)] text-[var(--text-secondary] h-full rounded-4xl content-center justify-items-center font-bold hover:bg-[var(--card-hover-color)]"
       key={content}
     >
       <p>{content}</p>

@@ -7,7 +7,7 @@ export default function TitleBar() {
       <div className="flex-none w-24"></div>
 
       {/* Center Container */}
-      <div className="flex-grow flex justify-center">
+      <div className="title-primary flex-grow flex justify-center">
         <h1>Landing Page</h1>
       </div>
 

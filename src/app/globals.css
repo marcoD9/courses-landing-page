@@ -20,6 +20,9 @@ html.light {
   /*TitleBar*/
   --gradient-color1: rgba(239, 247, 207);
   --gradient-color2: rgba(217, 226, 193);
+  /*Text*/
+  --text-primary: rgba(4, 31, 30);
+  --text-secondary: rgba(21, 53, 46);
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,11 +32,16 @@ html.light {
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
+    /* Card */
     --card: rgba(239, 247, 207);
     --card-hover-color: rgba(217, 226, 193);
     --border: rgba(0, 0, 0);
+    /*TitleBar*/
     --gradient-color1: rgba(239, 247, 207);
     --gradient-color2: rgba(217, 226, 193);
+    /*Text*/
+    --text-primary: rgba(4, 31, 30);
+    --text-secondary: rgba(21, 53, 46);
   }
 }
 
@@ -45,11 +53,16 @@ html.light {
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
+    /* Card */
     --card: rgba(44, 34, 96);
     --card-hover-color: rgba(18, 30, 205);
     --border: rgba(255, 255, 255);
+    /*TitleBar*/
     --gradient-color1: rgba(44, 34, 96);
     --gradient-color2: rgba(18, 30, 205);
+    /*Text*/
+    --text-primary: rgba(241, 233, 218);
+    --text-secondary: rgba(241, 245, 218);
   }
 }
 
@@ -59,9 +72,26 @@ html.dark {
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
   --switch-handle-color: #eeeeee;
+  /* Card */
   --card: rgba(44, 34, 96);
   --card-hover-color: rgba(18, 30, 205);
   --border: rgba(255, 255, 255);
+  /*TitleBar*/
   --gradient-color1: rgba(44, 34, 96);
   --gradient-color2: rgba(18, 30, 205);
+  /*Text*/
+  --text-primary: rgba(241, 233, 218);
+  --text-secondary: rgba(241, 245, 218);
+}
+
+/* Custom Classes*/
+@layer components {
+  .title-primary {
+    @apply text-4xl font-extrabold text-[var(--text-primary)] mb-4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .title-secondary {
+    @apply text-3xl font-bold text-[var(--text-primary)] mb-3;
+  }
 }
