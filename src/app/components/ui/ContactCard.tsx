@@ -14,17 +14,17 @@ export default function ContactCard({ contact }: ContactCardProp) {
       hover:bg-[var(--card-hover-color)] transform transition-all duration-500 ease-in-out
       hover:scale-105 hover:z-20 
       overflow-hidden
-      p-4"
+      p-2"
     >
       <p
         className="
-         text-sm sm:text-m lg:text-xl font-semibold leading-tight text-center mb-2"
+           text-xs sm:text-sm lg:text-base font-semibold leading-tight text-center "
       >
         Info :
       </p>
       <p
         className="
-        text-sm sm:text-m lg:text-xl 
+        text-sm sm:text-base lg:text-lg 
         font-extrabold leading-tight
         drop-shadow-lg"
       >
