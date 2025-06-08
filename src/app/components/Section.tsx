@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 export default function Section() {
   // Define animation variants for better organization, reusability, and readability.
   // Each variant object specifies 'initial' (start state), 'whileInView' (when visible)
-
   // Variants for the main section containers
   const sectionVariants = {
     initial: { opacity: 0, y: 100 }, // Starts invisible, moved 100px down
@@ -52,7 +51,7 @@ export default function Section() {
     <>
       {/* Section 1 */}
       <motion.div
-        className="section" // Existing CSS class for the section layout
+        className="grid-section" // Existing CSS class for the section layout
         variants={sectionVariants} // Apply the defined section animation variants
         initial="initial" // Set the initial state
         whileInView="whileInView" // Animate to this state when the element enters the viewport
@@ -95,7 +94,7 @@ export default function Section() {
 
       {/* Section 2 */}
       <motion.div
-        className="section"
+        className="grid-section"
         variants={sectionVariants}
         initial="initial"
         whileInView="whileInView"
@@ -137,7 +136,7 @@ export default function Section() {
 
       {/* Section 3 */}
       <motion.div
-        className="section"
+        className="grid-section"
         variants={sectionVariants}
         initial="initial"
         whileInView="whileInView"
