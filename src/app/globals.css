@@ -55,7 +55,7 @@ html.light {
     --switch-handle-color: #eeeeee;
     /* Card */
     --card: rgba(44, 34, 96);
-    --card-hover-color: rgba(18, 30, 205);
+    --card-hover-color: #f18805;
     --border: rgba(255, 255, 255);
     /*TitleBar*/
     --gradient-color1: rgba(44, 34, 96);
@@ -74,7 +74,7 @@ html.dark {
   --switch-handle-color: #eeeeee;
   /* Card */
   --card: rgba(44, 34, 96);
-  --card-hover-color: rgba(18, 30, 205);
+  --card-hover-color: #f18805;
   --border: rgba(255, 255, 255);
   /*TitleBar*/
   --gradient-color1: rgba(44, 34, 96);
@@ -93,5 +93,20 @@ html.dark {
 
   .title-secondary {
     @apply text-3xl font-bold text-[var(--text-primary)] mb-3;
+  }
+
+  .section {
+    @apply bg-[var(--background)] grid 
+        /*Heigth*/
+         h-[40vh]             /* Height for mobile*/
+         sm:h-[50vh]        
+         md:h-[70vh]         
+         xl:h-[100vh]   
+        /*Gap*/
+         gap-2                /*Gap for mobile*/
+         sm:gap-4
+         md:gap-4
+         lg:gap-6
+         border-6 p-2 my-8 mx-2 border-[var(--border)] rounded-2xl  grid-cols-4 grid-rows-4;
   }
 }
