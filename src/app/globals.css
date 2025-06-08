@@ -8,51 +8,50 @@ body {
 }
 /*Light Mode */
 html.light {
-  --background: #ffffff;
-  --body: #0a0a0a;
+    --background: #0a0a0a;            /*Black*/
+    --body:rgba(241, 233, 218);       /*White*/
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
-  --switch-handle-color: #eeeeee;
+  --switch-handle-color: rgba(241, 233, 218);
   /* Card */
-  --card: rgba(239, 247, 207);
-  --card-hover-color: rgba(217, 226, 193);
+  --card:#f18805; 
+  --card-hover-color:  rgba(44, 34, 96);
   --border: rgba(0, 0, 0);
   /*TitleBar*/
-  --gradient-color1: rgba(239, 247, 207);
-  --gradient-color2: rgba(217, 226, 193);
+ --gradient-color1: #f18805;
+--gradient-color2: #f18901;
   /*Text*/
-  --text-primary: rgba(4, 31, 30);
-  --text-secondary: rgba(21, 53, 46);
+    --text-primary: rgba(241, 233, 218);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
-    --body: #0a0a0a;
+     --background: #0a0a0a;
+    --body:rgba(241, 233, 218);
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
-    --switch-handle-color: #eeeeee;
+    --switch-handle-color:rgba(241, 233, 218);
     /* Card */
-    --card: rgba(239, 247, 207);
-    --card-hover-color: rgba(217, 226, 193);
+    --card:
+    --card:#f18805; 
+    --card-hover-color:  rgba(44, 34, 96);
     --border: rgba(0, 0, 0);
     /*TitleBar*/
-    --gradient-color1: rgba(239, 247, 207);
-    --gradient-color2: rgba(217, 226, 193);
+    --gradient-color1: #f18805;
+    --gradient-color2: #f18901;
     /*Text*/
-    --text-primary: rgba(4, 31, 30);
-    --text-secondary: rgba(21, 53, 46);
-  }
+      --text-primary: rgba(241, 233, 218);
+  }   
 }
 
 /*Dark Mode*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --body: #ffffff;
+     --background: rgba(241, 233, 218);   /*White*/
+    --body: #0a0a0a;                       /*Black*/
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
-    --switch-handle-color: #eeeeee;
+    --switch-handle-color:rgba(241, 233, 218);
     /* Card */
     --card: rgba(44, 34, 96);
     --card-hover-color: #f18805;
@@ -62,16 +61,16 @@ html.light {
     --gradient-color2: rgba(18, 30, 205);
     /*Text*/
     --text-primary: rgba(241, 233, 218);
-    --text-secondary: rgba(241, 245, 218);
+
   }
 }
 
 html.dark {
-  --background: #0a0a0a;
-  --body: #ffffff;
+     --background: rgba(241, 233, 218);
+    --body: #0a0a0a;
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
-  --switch-handle-color: #eeeeee;
+  --switch-handle-color: rgba(241, 233, 218);
   /* Card */
   --card: rgba(44, 34, 96);
   --card-hover-color: #f18805;
@@ -81,7 +80,6 @@ html.dark {
   --gradient-color2: rgba(18, 30, 205);
   /*Text*/
   --text-primary: rgba(241, 233, 218);
-  --text-secondary: rgba(241, 245, 218);
 }
 
 /* Custom Classes*/
@@ -92,7 +90,7 @@ html.dark {
   }
 
   .title-secondary {
-    @apply text-3xl font-bold text-[var(--background)] mb-3;
+    @apply text-3xl font-bold text-[var(--text-primary)] mb-3;
   }
 
   .section {
@@ -107,6 +105,6 @@ html.dark {
          sm:gap-4
          md:gap-4
          lg:gap-6
-         border-6 p-2 my-8 mx-2 border-[var(--border)] rounded-2xl  grid-cols-4 grid-rows-4;
+         border-6 p-2 my-8 mx-2 border-[var(--background)] rounded-2xl  grid-cols-4 grid-rows-4;
   }
 }
