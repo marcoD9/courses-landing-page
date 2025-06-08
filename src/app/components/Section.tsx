@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Section() {
   // Define animation variants for better organization, reusability, and readability.
-  // Each variant object specifies 'initial' (start state), 'whileInView' (when visible),
-  // and 'whileNotInView' (when leaving view) states.
+  // Each variant object specifies 'initial' (start state), 'whileInView' (when visible)
 
   // Variants for the main section containers
   const sectionVariants = {
