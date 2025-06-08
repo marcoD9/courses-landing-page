@@ -18,7 +18,7 @@ export default function ContactCard({ contact }: ContactCardProp) {
     >
       <p
         className="
-           text-xs sm:text-sm lg:text-base font-semibold leading-tight text-center "
+           text-xs sm:text-sm lg:text-base font-semibold leading-tight text-center mb-2"
       >
         Info :
       </p>
