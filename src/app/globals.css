@@ -105,8 +105,8 @@ html.dark {
   .grid-section {
     @apply bg-[var(--background)] grid 
         /*Heigth*/
-         h-[40vh]             /* Height for mobile*/
-         sm:h-[50vh]        
+         h-[50vh]             /* Height for mobile*/
+         sm:h-[55vh]        
          md:h-[70vh]         
          xl:h-[100vh]   
         /*Gap*/
