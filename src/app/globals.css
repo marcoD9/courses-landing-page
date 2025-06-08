@@ -3,13 +3,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-libre-franklin), sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
 }
 /*Light Mode */
 html.light {
   --background: #ffffff;
-  --foreground: #171717;
+  --body: #0a0a0a;
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
   --switch-handle-color: #eeeeee;
@@ -28,7 +28,7 @@ html.light {
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --body: #0a0a0a;
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
@@ -49,7 +49,7 @@ html.light {
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --body: #ffffff;
     --switch-bg-on: #2196f3;
     --switch-bg-off: #555555;
     --switch-handle-color: #eeeeee;
@@ -68,7 +68,7 @@ html.light {
 
 html.dark {
   --background: #0a0a0a;
-  --foreground: #ededed;
+  --body: #ffffff;
   --switch-bg-on: #2196f3;
   --switch-bg-off: #555555;
   --switch-handle-color: #eeeeee;
@@ -92,7 +92,7 @@ html.dark {
   }
 
   .title-secondary {
-    @apply text-3xl font-bold text-[var(--text-primary)] mb-3;
+    @apply text-3xl font-bold text-[var(--background)] mb-3;
   }
 
   .section {
