@@ -15,7 +15,7 @@ export default function DescriptionCard({
                  content-center justify-items-center font-bold
                  hover:bg-[var(--card-hover-color)]
                  transform transition-transform duration-300 hover:scale-110
-                 hover:z-100 overflow-hidden group" // Added 'group' class for hover effects
+                 hover:z-100 overflow-hidden group"
     >
       {imageUrl && (
         <Image
@@ -32,9 +32,16 @@ export default function DescriptionCard({
       {imageUrl && (
         <div className="absolute inset-0 bg-black opacity-30 z-10 rounded-4xl group-hover:opacity-10"></div>
       )}
-
       {/* The description text */}
-      <p className="relative z-20 text-xl font-semibold  p-4 text-white text-center leading-relaxed">
+      <p
+        className="text-white
+    relative z-20
+    text-xl sm:text-2xl lg:text-3xl
+    font-extrabold
+    text-center leading-relaxed
+drop-shadow-lg
+     [text-shadow:_15px_15px_10px_rgba(0,0,0,0.7)]"
+      >
         {description}
       </p>
     </div>

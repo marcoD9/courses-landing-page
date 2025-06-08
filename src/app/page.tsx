@@ -4,7 +4,7 @@ import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="bg-[var(--body)] overflow-hidden">
       <TitleBar />
       <SectionTitle />
       <Section />

@@ -67,7 +67,7 @@ export default function Section() {
           whileInView="whileInView"
           viewport={{ once: false }}
         >
-          <ImageCard imageUrl="/cake.png" backgroundText="SWEETS" />
+          <ImageCard imageUrl="/cake.png" backgroundText="CAKES" />
         </motion.div>
         <motion.div
           className="col-span-2 row-span-3"
@@ -88,7 +88,7 @@ export default function Section() {
           whileInView="whileInView"
           viewport={{ once: false }}
         >
-          <ContactCard contact="fakeemail" />
+          <ContactCard contact="cake@email.com" />
         </motion.div>
       </motion.div>
 
@@ -118,7 +118,7 @@ export default function Section() {
           whileInView="whileInView"
           viewport={{ once: false }}
         >
-          <ContactCard contact="fakeemail" />
+          <ContactCard contact="pizza@email.com" />
         </motion.div>
         <motion.div
           className="col-span-2 row-span-3"
@@ -163,7 +163,7 @@ export default function Section() {
           whileInView="whileInView"
           viewport={{ once: false }}
         >
-          <ContactCard contact="fakeemail" />
+          <ContactCard contact="drink@email.com" />
         </motion.div>
         <motion.div
           className="col-start-3 col-end-5 row-span-4"

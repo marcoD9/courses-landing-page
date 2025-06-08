@@ -37,17 +37,12 @@ export default function ImageCard({
 
       <div
         className="
-          absolute z-20
-          top-1/2            
-          left-1/2          
-          -translate-x-1/2  
-          -translate-y-1/2   
-          w-[50%]           
-          aspect-square      
-          flex items-center justify-center
-          
-          min-w-[150px] min-h-[150px]
-          md:min-w-[200px] md:min-h-[200px]
+          absolute z-20 
+          top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+          w-[50%] aspect-square 
+          min-w-[150px] min-h-[150px] 
+          md:min-w-[250px] 
+          flex items-center justify-center 
         "
       >
         <Image
@@ -56,7 +51,10 @@ export default function ImageCard({
           fill
           style={{ objectFit: "cover" }}
           priority
-          sizes="(max-width: 768px) 50vw, (min-width: 769px) 25vw, 150px"
+          // For small screens (up to 640px), 50vw.
+          // For medium screens (up to 1024px), 30vw.
+          // For larger screens (above 1024px), 20vw.
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 30vw, 20vw"
         />
       </div>
     </div>
