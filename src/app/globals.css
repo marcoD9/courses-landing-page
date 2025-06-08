@@ -110,8 +110,8 @@ html.dark {
          md:h-[70vh]         
          xl:h-[100vh]   
         /*Gap*/
-         gap-2                /*Gap for mobile*/
-         sm:gap-4
+         gap-1                /*Gap for mobile*/
+         sm:gap-2
          md:gap-4
          lg:gap-6
          border-6 p-2 my-8 mx-2 border-[var(--background)] rounded-2xl  grid-cols-4 grid-rows-4;
