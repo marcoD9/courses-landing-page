@@ -34,7 +34,7 @@ export default function DescriptionCard({
       )}
       {/* The description text */}
       <p
-        className="text-white
+        className="text-[var(--text-primary)]
     relative z-20
     text-xl sm:text-2xl lg:text-3xl
     font-extrabold

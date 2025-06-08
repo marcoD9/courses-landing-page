@@ -11,7 +11,7 @@ export default function ImageCard({
   backgroundText,
 }: ImageCardProps) {
   return (
-    <div className="relative bg-[var(--card)] text-[var(--text-secondary] h-full rounded-4xl content-center justify-items-center font-bold hover:bg-[var(--card-hover-color)] transform transition-transform duration-300 hover:scale-110 hover:z-100 z-10 overflow-hidden">
+    <div className="relative bg-[var(--card)] text-[var(--text-primary] h-full rounded-4xl content-center justify-items-center font-bold hover:bg-[var(--card-hover-color)] transform transition-transform duration-300 hover:scale-110 hover:z-100 z-10 overflow-hidden">
       {/* 1.Background Text */}
       {backgroundText && (
         <span
@@ -23,7 +23,7 @@ export default function ImageCard({
     lg:text-[15rem]
     xl:text-[20rem]
     -rotate-3
-    text-[var(--text-secondary)] opacity-30 drop-shadow-lg
+    text-[var(--text-primary)] opacity-30 drop-shadow-lg
     whitespace-nowrap select-none pointer-events-none
     z-10
     transition-opacity duration-300 group-hover:opacity-10
